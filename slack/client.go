@@ -217,7 +217,7 @@ func (c *Client) Start() error {
 	return nil
 }
 
-// LoginAndStarts is a simple helper function that calls login and start successively
+// LoginAndStart is a simple helper function that calls login and start successively
 // so that it can be invoked in a goroutine (as is done in InitClients)
 func (c *Client) LoginAndStart() error {
 	b := backoff.NewExponentialBackOff()
